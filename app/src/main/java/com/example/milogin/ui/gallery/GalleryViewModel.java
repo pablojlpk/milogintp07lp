@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.lifecycle.AndroidViewModel;
@@ -17,6 +18,7 @@ public class GalleryViewModel extends AndroidViewModel {
 
     private MutableLiveData<String> mText;
 private Context context;
+private Intent intent;
 
     public GalleryViewModel(@NotNull Application application) {
         super(application);;
@@ -32,6 +34,16 @@ private Context context;
         return mText;
     }
 
+public void iniciarServicio(Context c){
+         intent= new Intent(c, MiServicio.class);
+        c.startService(intent);
 
+}
+public void detenerServicio( Context c) {
+
+
+
+
+}
 
 }

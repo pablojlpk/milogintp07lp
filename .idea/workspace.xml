@@ -48,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/sistema/AndroidStudioProjects/miloginlptp07",
+    "last_opened_file_path": "C:/Users/sistema/Documents/Github/Servicios",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2"
@@ -58,11 +58,16 @@
     <option name="MODULE_TAB" value="Default Config" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-336046541">
+      <recent name="com.example.milogin.ui.maps" />
+      <recent name="com.example.milogin" />
+    </key>
     <key name="android.template.1977945102">
       <recent name="com.example.milogin.ui.salir" />
       <recent name="com.example.milogin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sistema\Documents\Github\milogintp07lp\app\src\main\res\drawable" />
       <recent name="C:\Users\sistema\AndroidStudioProjects\miloginlptp07\app\src\main\res\raw" />
       <recent name="C:\Users\sistema\AndroidStudioProjects\miloginlp\app\src\main\res\drawable" />
     </key>

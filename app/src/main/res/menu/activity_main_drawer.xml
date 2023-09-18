@@ -10,8 +10,14 @@
             android:title="Llamar" />
         <item
             android:id="@+id/nav_MiFoto"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Mi Foto" />
+            android:icon="@drawable/icomusic"
+            android:title="Musica" />
+
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/equipo"
+            android:title="Mapa" />
+
         <item
             android:id="@+id/nav_salirFragment"
             android:icon="@drawable/exit32"

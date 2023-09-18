@@ -30,7 +30,8 @@ public class Dialogos  {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(activity, "Cerrando Sesión", Toast.LENGTH_LONG).show();
                         //activity.finish();
-                        System.exit(0);
+                        activity.finishAffinity();
+                        //System.exit(0);
 
 
                     }

@@ -1,5 +1,6 @@
 package com.example.milogin.ui.gallery;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,9 +21,8 @@ import com.example.milogin.databinding.FragmentGalleryBinding;
 public class GalleryFragment extends Fragment {
 
     private FragmentGalleryBinding binding;
-    private Button boton;
-    private View v;
-    private MiServicio miservicio;
+        private View v;
+
 private Intent intent;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -33,29 +33,16 @@ private Intent intent;
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         v=inflater.inflate(R.layout.fragment_gallery,container,false);
-
-        binding.btReproducir.setOnClickListener(new View.OnClickListener() {
+binding.btReproducir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-iniciar(v);
-
-
-
+                galleryViewModel.iniciarServicio(v.getContext());
             }
-
         });
-
-
-
         return root;
-
     }
-public void iniciar(View view){
 
-        Intent intent =new Intent(v.getContext(), MiServicio.class);
-    //intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
-    miservicio.startService(intent);
-}
+
 
     @Override
     public void onDestroyView() {
