@@ -4,10 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_Llamar"
-            android:icon="@drawable/call16"
-            android:title="Llamar" />
+
         <item
             android:id="@+id/nav_MiFoto"
             android:icon="@drawable/icomusic"

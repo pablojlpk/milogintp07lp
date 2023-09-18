@@ -5,16 +5,11 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_MiFoto">
 
-    <fragment
-        android:id="@+id/nav_Llamar"
-        android:name="com.example.milogin.ui.home.HomeFragment"
-        android:label="llamar"
-        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_MiFoto"
         android:name="com.example.milogin.ui.gallery.GalleryFragment"
-        android:label="Mi Foto"
+        android:label="Musica"
         tools:layout="@layout/fragment_gallery" />
     <fragment
         android:id="@+id/nav_salirFragment"
