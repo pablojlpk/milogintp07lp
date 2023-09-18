@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -12,6 +13,7 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,8 +32,11 @@ import com.google.android.gms.tasks.Task;
 public class MapsFragment extends Fragment {
     private FusedLocationProviderClient fused;
     private Context context;
+    private MapsFragmentViewModel vm;
+    Location loc;
 
     private OnMapReadyCallback callback = new OnMapReadyCallback() {
+
 
         /**
          * Manipulates the map once available.
@@ -45,7 +50,14 @@ public class MapsFragment extends Fragment {
         @Override
         public void onMapReady(GoogleMap googleMap) {
 
+
+
+
             //fused = LocationServices.getFusedLocationProviderClient(getContext());
+
+
+
+
             //LatLng pablo = new
             LatLng sydney = new LatLng(-34, 151);
             googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
@@ -56,10 +68,6 @@ public class MapsFragment extends Fragment {
 
         }
     };
-    private void obtenerUbicacion(){
-
-
-    }
 
     @Nullable
     @Override
